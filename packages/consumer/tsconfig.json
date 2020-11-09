@@ -1,0 +1,26 @@
+{
+    "extends": "../../tsconfig.json",
+    "compilerOptions": {
+        "rootDir": "src",
+        "outDir": "dist",
+        "incremental": false,
+        "declaration": false,
+        "baseUrl": ".",
+        "paths": {
+            "common/*": [
+                "../common/dist/*"
+            ],
+            "es-common/*": [
+                "../es-common/dist/*"
+            ]
+        },
+    },
+    "references": [
+        {
+            "path": "../common"
+        },
+        {
+            "path": "../es-common"
+        },
+    ]
+}

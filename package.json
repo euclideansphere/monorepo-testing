@@ -1,0 +1,14 @@
+{
+  "name": "monorepo-testing",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "clean": "rm -rf dist packages/common/dist packages/consumer/dist packages/es-common/dist"
+  },
+  "workspaces": [
+    "packages/common",
+    "packages/es-common",
+    "packages/consumer"
+  ]
+}
